@@ -1,0 +1,226 @@
+#map {
+    height: 0;
+    width: 40%;
+    padding-bottom: 25%;  /* Mantiene la proporción 4:3 (ancho:alto) */
+    position: relative;   /* Asegura que el padding-bottom funcione correctamente */
+}
+
+#map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #ff3e3e, #ffcc70);
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+/* ------ HEADER SECTION ------ */
+
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    min-height: 70px;
+    background-color: black;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    padding: 10px;
+    margin-right: 10px;
+    background: rgb(246, 110, 78);
+    color: White;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn:hover{
+    background-color: #ff4c4c;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    height: 70px;
+    margin-left: 10px;
+}
+
+
+
+
+/* ------ Main ------ */
+
+main {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: 100vh;            /* Ocupa toda la altura de la ventana */
+    text-align: center;       /* Alinea el texto dentro de las etiquetas */
+}
+/* ------ Botón atras ------ */
+
+.atras-btn, .home-btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    top: 10px;
+    right: 10px;
+    width: auto;
+}
+
+.atras-btn, .home-btn:hover {
+    background-color: #ff4c4c;
+}
+
+
+/* ------ Estilo para el contenedor ------ */
+#Container {
+    max-width: 600px;   /* Define el ancho máximo del contenedor */
+    width: 100%;        /* Se asegura de que el contenedor no sobrepase el 100% del ancho */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;    /* Opcional, pero puede ser útil para mejorar la legibilidad */
+    margin: 0 15px 0 0; 
+}
+
+
+label {
+    font-size: 1.1em;         /* Tamaño de texto más grande */
+    color: #333;              /* Color oscuro para el texto */
+    margin-bottom: 8px;       /* Espacio entre las etiquetas */
+    display: inline-block;    /* Asegura que las etiquetas sean bloques para un buen espaciado */
+    font-weight: bold;        /* Hacer las etiquetas en negrita */
+}
+
+#labelMail, #labelEdad, #labelGenero, #labelCiudad {
+    display: block;           /* Hace que los valores se ubiquen debajo de las etiquetas */
+    margin-bottom: 10px;      /* Espacio entre cada par etiqueta/valor */
+    font-size: 1em;           /* Tamaño de texto para los valores */
+    color: #666;              /* Color de texto para los valores */
+}
+
+#imagenUsuario {
+    width: 150px;             /* Ajusta el tamaño de la imagen */
+    height: 150px;            /* Mantiene la imagen cuadrada */
+    object-fit: cover;        /* Mantiene la proporción de la imagen */
+    border-radius: 50%;       /* Bordes redondeados para que la imagen sea circular */
+    margin-top: 5px;          /* 5px de margen arriba de la imagen */
+    border: 3px solid #ddd;   /* Borde sutil alrededor de la imagen */
+}
+
+/*Barra de navegación-----------------------------------------*/
+/* Imagen del usuario */
+#fotoUsuario {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Hacer la imagen redonda */
+    object-fit: cover; /* Ajustar la imagen al contenedor */
+}
+
+/* Texto del mensaje de bienvenida */
+#mensajeBienvenida {
+    color: white; /* Texto en blanco */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-right: 10px; /* Espaciado entre el mensaje y la imagen */
+}
+
+/* Botón de cerrar sesión */
+#cerrarSesionBtn {
+    background-color: #555; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor a "pointer" */
+    transition: background-color 0.3s ease; /* Animación al pasar el ratón */
+}
+
+#EditarPerfil {
+    background-color: #555; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor a "pointer" */
+    transition: background-color 0.3s ease; /* Animación al pasar el ratón */
+}
+
+#cerrarSesionBtn:hover {
+    background-color: #333; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+
+#EditarPerfil:hover {
+    background-color: #333; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+
+
+
+/* ------ FOOTER SECTION ------ */
+
+
+#main-footer {
+    background-color: black;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: auto;
+}
+
+#main-footer h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#main-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#main-footer ul li {
+    margin-bottom: 5px;
+}
+
+#main-footer h4 {
+    margin-top: 20px;
+    font-weight: normal;
+    color: #aaa;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/busquedaLog.css">
+        <title>VITOMAITE</title>
+        <link rel="icon" type="image/ico" href="img/logomini.ico"/>
+    </head>
+    <body class="vitomaite-body">
+        <header>
+            <div class="logo">
+                <img src="IMG/logo1.png" alt="" onclick="window.location.href = 'Inicio.html'">
+
+
+            </div>
+            <nav>
+
+                <div id="cerrarSesionContainer">  
+                    <a id="mensajeBienvenida"></a>
+                    <img id="fotoUsuario" alt="Foto del usuario" src =''>
+                    <button id="EditarPerfil" onclick="window.location.href = 'EditarPerfil.html'">EditarPerfil</button>
+
+                    <button id="cerrarSesionBtn">Cerrar Sesión</button>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <main>
+            <form id="form-buscar">
+                <h1>VitoMaite</h1>
+                <label for="preferencia">Qué estás buscando</label>
+                <select id="preferencia" name="preferencia">
+                    <option value="Femenino">Busco mujer</option>
+                    <option value="Masculino">Busco hombre</option>
+
+
+                </select>
+
+                <label for="ciudad">Ciudad</label>
+                <select id="ciudad" name="ciudad">
+                    <option value="Bilbao">Bilbao</option>
+                    <option value="Donosti">Donosti</option>
+                    <option value="Vitoria">Vitoria</option>
+                </select>
+                <br>
+                <label for="edad-min">Edad mínima</label>
+                <input type="number" id="edad-min" name="edad-min" >
+
+                <label for="edad-max">Edad máxima</label>
+                <input type="number" id="edad-max" name="edad-max" >
+
+
+
+                
+                <div class="contenedor">
+    <div class="contenedor">
+    <div class="izquierda">
+        <input type="checkbox" id="1"><label for="checkbox1">Leer</label><br>
+        <input type="checkbox" id="2"><label for="checkbox2">Bailar</label><br>
+        <input type="checkbox" id="3"><label for="checkbox3">Pintar</label><br>
+        <input type="checkbox" id="4"><label for="checkbox4">Escribir</label><br>
+        <input type="checkbox" id="5"><label for="checkbox5">Nadar</label><br>
+    </div>
+    <div class="centrado">
+        <input type="checkbox" id="6"><label for="checkbox6">Viajar</label><br>
+        <input type="checkbox" id="7"><label for="checkbox7">Mus</label><br>
+        <input type="checkbox" id="8"><label for="checkbox8">Correr</label><br>
+        <input type="checkbox" id="9"><label for="checkbox9">Cocinar</label><br>
+        <input type="checkbox" id="10"><label for="checkbox10">Senderismo</label><br>
+    </div>
+    <div class="derecha">
+        <input type="checkbox" id="11"><label for="checkbox11">Música</label><br>
+        <input type="checkbox" id="12"><label for="checkbox12">Cantar</label><br>
+        <input type="checkbox" id="13"><label for="checkbox13">Yoga</label><br>
+        <input type="checkbox" id="14"><label for="checkbox14">Fotografía</label><br>
+        <input type="checkbox" id="15"><label for="checkbox15">Videojuegos</label><br>
+    </div>
+</div>
+
+                <button type="submit">Buscar Candidato/a</button>
+
+
+            </form>
+            <label id="EtiquetaErrores"></label>
+
+            <div id="resultados">
+                <!-- Tabla dinámica-->
+            </div>
+
+
+        </main>
+        <footer id="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Desarrolladores</h3>
+                        <ul>
+                            <li>Jon Albarrán</li>
+                            <li>Mikel Martin</li>
+                            <li>Andoni Gonzalez</li>
+                        </ul>
+                        <h4>&copy; 2024 Vitomaite. Todos los derechos reservados. Esta aplicación y su contenido están protegidos por leyes de copyright y propiedad intelectual. El uso no autorizado está prohibido.</h4>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="JS/busquedaLog.js"></script>
+
+    </body>
+</html>

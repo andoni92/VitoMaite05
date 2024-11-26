@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <script src="JS/EditarPerfil.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/EditarPerfil.css">
+        <title>VITOMAITE</title>
+        <link rel="icon" type="image/ico" href="img/logomini.ico"/>
+    </head>
+    <body>
+        <header>
+            <button type="submit" class="atras-btn" onclick="window.location.href = 'Inicio.html'"><img src="IMG/flechaAtras.png" alt="Flecha hacia atrás" class="imagen-flecha">
+            </button>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="editar-perfil">
+                    <form id="formulario">
+                        <p class="title">EDITAR PERFIL</p>
+                        <!-- Contenedor circular para la imagen -->
+                        <label for="foto" class="imagen-circulo">
+                            <img id="fotoUsuarioEP" alt="Foto del usuario" src="IMG/default-photo.png">
+                        </label>
+                        <input type="file" id="foto" name="foto" accept="image/*" style="display: none;">
+                        <div id="nombreFoto">
+                            <p>FOTO</p>
+                        </div>
+                        <div id="ciudadActual">
+                            <p>Ciudad actual: <span id="ciudad-actual"></span></p>
+                        </div>
+                        <div id="select-ciudad">
+                            <label for="ciudad">Cambiar a: </label>
+                            <select id="ciudad">
+                                <option value="Vitoria">Vitoria</option>
+                                <option value="Bilbao">Bilbao</option>
+                                <option value="Donosti">Donosti</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button id="ver-aficiones" class="btn">Ver Aficiones</button>
+                            <div id="lista-aficiones">
+                                <!-- Aquí se generarán dinámicamente los checkboxes -->
+                            </div>
+                        </div>
+                        <button class="save" type="submit">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer id="main-footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Desarrolladores</h3>
+                        <ul>
+                            <li>Jon Albarrán</li>
+                            <li>Mikel Martín</li>
+                            <li>Andoni González</li>
+                        </ul>
+                        <h4>&copy; 2024 Vitomaite. Todos los derechos reservados.</h4>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

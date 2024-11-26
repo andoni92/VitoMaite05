@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #ff3e3e, #ffcc70);
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+/* ------ HEADER SECTION ------ */
+
+
+.imagen-flecha {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: black;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ------ Botón atras ------ */
+
+.atras-btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    top: 10px;
+    right: 10px;
+    width: auto;
+}
+
+.atras-btn:hover {
+    background-color: #ff4c4c;
+}
+
+
+
+
+
+
+/* ------ MAIN SECTION ------ */
+
+main {
+    min-height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.editar-perfil {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 50vw;
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+#nombreFoto {
+    margin: 10px;
+    color: #555;
+}
+
+/* Círculo para la imagen */
+.imagen-circulo {
+    display: inline-block;
+    width: 200px; /* Tamaño del círculo */
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden; /* Contenido limitado al círculo */
+    border: 2px solid #ccc; /* Bordes decorativos */
+    cursor: pointer; /* Cursor indica clickeable */
+    position: relative;
+    background-color: #f4f4f4;
+}
+
+.imagen-circulo:hover {
+    opacity: 0.9;
+}
+
+.imagen-circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen cubre todo el círculo */
+    vertical-align: middle;
+}
+
+#fotoUsuarioEP {
+    width: 100%; /* Se ajusta al tamaño del círculo */
+    height: 100%;
+    border-radius: 50%; /* Asegura la forma circular */
+}
+
+#ciudadActual{
+    margin-top: 25px;
+}
+
+.aficiones {
+    margin-top: 25px;
+}
+
+#ver-aficiones {
+    margin-top: 20px;
+    padding: 4px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    width: 20%;
+}
+
+#ver-aficiones:hover {
+    background-color: #ff4c4c;
+}
+
+#lista-aficiones {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Oculta el checkbox original */
+input.day-btn {
+    display: none;
+}
+
+/* Estilos para las etiquetas */
+label.custom-label {
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ff5b22;
+  cursor: pointer;
+  border: 2px solid #ff5b22;
+  border-radius: 50px; 
+  margin: 5px;
+  padding: 5px 15px; 
+  width: 120px; 
+  height: 28px; 
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Estilo para el estado seleccionado */
+input.day-btn:checked + label.custom-label {
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  border: none;
+  color: white;
+}
+
+.save {
+    background-color: #ff6b6b;
+    color: white;
+    margin-top: 20px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    width: 100%;
+}
+
+.save:hover {
+    background-color: #ff4c4c;
+}
+
+
+
+/* ------ FOOTER SECTION ------ */
+
+
+#main-footer {
+    background-color: black;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: auto;
+}
+
+#main-footer h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#main-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#main-footer ul li {
+    margin-bottom: 5px;
+}
+
+#main-footer h4 {
+    margin-top: 20px;
+    font-weight: normal;
+    color: #aaa;
+}
